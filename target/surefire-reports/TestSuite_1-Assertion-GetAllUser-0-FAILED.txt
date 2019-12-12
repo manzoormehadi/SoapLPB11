@@ -1,0 +1,50 @@
+Status: FAILED
+Time Taken: 260
+Size: 12
+Timestamp: Thu Dec 12 12:24:35 IST 2019
+TestStep: GetAllUser
+
+----------------- Messages ------------------------------
+[JsonPath Count] Comparison failed for path [users], expecting [50], actual was [0]
+[JsonPath Existence Match] Assertion failed for path [users[49].email] : PathNotFoundException:Path 'users' not found in the current context:
+{"error": {}}
+[JsonPath Match] Assertion failed for path [users[3].email] : PathNotFoundException:Path 'users' not found in the current context:
+{"error": {}}
+[Script Assertion] Cannot invoke method getAt() on null object
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://ecommerceservice.herokuapp.com
+Method: GET
+StatusCode: 500
+URL: https://ecommerceservice.herokuapp.com/user
+
+---------------- Request ---------------------------
+Authorization: [bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZGVmMzY4MDM2MjhhODAwMTczYmNkZDAiLCJpYXQiOjE1NzU5NTgyMTQsImV4cCI6MTU3NjA0NDYxNH0.j9MGs0Maftl70xgDI562qNaG9zlrh6ipz_rnl-5dzTg]
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.1.1 (java 1.5)]
+Host: [ecommerceservice.herokuapp.com]
+Accept-Encoding: [gzip,deflate]
+
+GET https://ecommerceservice.herokuapp.com/user HTTP/1.1
+Accept-Encoding: gzip,deflate
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZGVmMzY4MDM2MjhhODAwMTczYmNkZDAiLCJpYXQiOjE1NzU5NTgyMTQsImV4cCI6MTU3NjA0NDYxNH0.j9MGs0Maftl70xgDI562qNaG9zlrh6ipz_rnl-5dzTg
+Host: ecommerceservice.herokuapp.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+
+
+---------------- Response --------------------------
+Server: [Cowboy]
+Etag: [W/"c-3Rk1bge0s6VuJbi+S2m2iU0UGdY"]
+Access-Control-Allow-Origin: [*]
+Connection: [keep-alive]
+#status#: [HTTP/1.1 500 Internal Server Error]
+Content-Length: [12]
+Access-Control-Allow-Headers: [Origin, X-Requested-With, Content-Type, Accept, Authorization]
+Date: [Thu, 12 Dec 2019 06:54:35 GMT]
+X-Powered-By: [Express]
+Content-Type: [application/json; charset=utf-8]
+Via: [1.1 vegur]
+
+{"error":{}}
